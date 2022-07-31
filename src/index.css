@@ -1,13 +1,159 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: Pbold;
+  src: url(../fonts/Pretendard-SemiBold.otf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Pregular;
+  src: url(../fonts/Pretendard-Regular.otf);
+}
+
+@font-face {
+  font-family: Plight;
+  src: url(../fonts/Pretendard-Light.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:focus {
+  outline: none;
+}
+
+Body {
+  background-color: #f0f0f0;
+}
+
+.App {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.InputWrap {
+  background-color: #fff;
+  width: 400px;
+  height: 400px;
+  border-radius: 15px;
+}
+
+.DateWrapWrap {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 60px;
+  border-radius: 15px;
+}
+
+.DateWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 340px;
+  height: 60px;
+  margin-top: 5px;
+  border-bottom: 2px #000 solid;
+}
+
+.Date {
+  font-family: Pbold;
+  font-size: 24px;
+  border: none;
+  text-align: center;
+  width: 280px;
+}
+
+.GoLeftSvg {
+  width: 30px;
+  height: 30px;
+  transform: rotate(180deg);
+}
+
+.GoRightSvg {
+  width: 30px;
+  height: 30px;
+}
+
+.TodoInput {
+  margin-left: 30px;
+  margin-top: 11px;
+  width: 340px;
+  height: 265px;
+  font-size: 20px;
+  font-family: Plight;
+  resize: none;
+  line-height: 35px;
+  border: none;
+}
+
+.SaveSvgWrap {
+  margin-left: 30px;
+  width: 340px;
+  display: flex;
+  justify-content: right;
+}
+
+.SaveSvg {
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border: none;
+}
+
+.ListWrapWrap {
+  background-color: #fff;
+  width: 800px;
+  height: 400px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.ListWrap {
+  width: 730px;
+  height: 330px;
+  margin: 35px;
+  overflow: scroll;
+}
+
+.List {
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  margin-bottom: 10px;
+}
+
+.ListContent {
+  padding: 16px 54px 16px 30px;
+  height: auto;
+  background-color: black;
+  color: white;
+  font-family: Pregular;
+  font-size: 24px;
+  border-radius: 30px;
+  display: flex;
+  align-items: top;
+}
+
+.Content {
+  max-width: 568.3px;
+  word-break: break-all;
+}
+
+.Check {
+  width: 24px;
+  height: 24px;
+  accent-color: white;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+
+.DeleteSvg {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  margin-top: 13px;
 }
